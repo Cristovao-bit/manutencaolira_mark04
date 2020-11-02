@@ -1,0 +1,107 @@
+/*HEADER*/
+.main_header{border-bottom: 2px solid #ff0000; position: relative;}
+.main_header_fixed{position: fixed;  background-color: rgba(255,255,255,0.7); border-bottom: 2px solid #ff0000; z-index: 99;}/*top: 0; left: 0;*/
+.main_logo{ background: url(../img/logo-site.png) center center no-repeat;height: 80px; width: 100px;}
+.mobile_action{width: 40px; height: 40px; margin: 21px 0 0 0; float: right; cursor: pointer; background: url(../img/mobile.png) center center no-repeat;}
+/*menu*/
+.main_menu{position: fixed; left: -100%; top: 0px; width: 76%; height: 100%; min-width: 200px; max-width: 360px; background: #000; z-index: 99;}
+.main_menu_item a{float: left; width: 100%; position: relative; padding: 15px; color: #eee; font-weight: bold; font-size: 0.875em; text-transform: uppercase;}
+.main_menu_item a:hover{background: #ff0000; color: #fff;}
+
+/*Empresa*/
+.main_empresa article{background-color: #fbfbfb; -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); -moz-box-shadow:0px 3px 3px 0px rgba(0,0,0,0.3); box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); padding: 20px 30px; min-height: 200px; margin-top: 10px;}
+.main_empresa h1{text-align: center; font-size: 1.6em; font-weight: 300; margin-bottom: 10px;}
+.main_empresa p{text-align: center; font-size: 1em; font-weight: normal; margin-top: 10px;}
+
+/*Servicos*/
+.main_serv_item{ min-height: 250px; text-align: center; width: 100%;}
+.main_serv_item img{width: 40%; height: 40%; padding-top: 10px;}
+.main_serv_item h1{font-size: 1.4em; font-weight: 300; margin-bottom: 5px;}
+.main_serv_item p{font-size: 0.875em;}
+
+/*Cartão Fidelidade*/
+.main_cartao{background: url(../img/bac_empresa.jpg) center center no-repeat; background-size: cover; background-attachment: fixed; min-height: 150px;}
+.cartao{margin: 2% auto; padding: 1% 2%; background-color: rgba(255,255,255,0.5); width: 100%; max-width: 600px;}
+.main_header_cartao{margin-bottom: 10px;}
+.main_header_cartao h1{font-size: 1.6em; font-weight: 300;}
+.main_header_cartao.tagline{font-size: 1.2em; font-weight: 300;}
+.form_check input{float: left; width: 60%;}
+.form_check a{float: left; width: 40%; text-align: center;}
+
+/*Agenda Online*/
+.main_agenda{background-color: #ff0000; height: 150px; margin: 3% 3%;padding:10px 10px;}
+
+/*Fale Conosco*/
+.contacto_info{width: 100%; padding-top: 5px; text-align: center;}
+.contacto_info ul{margin-bottom: 10px; padding-top: 10px;}
+.contacto_info li{margin-bottom: 10px; font-size: 0.875em; font-weight: 300;}
+.contacto_info b{font-size: 1.1em; font-weight: 300;}
+.contacto_info a{color: #f6bd1e;}
+.contacto_info a:hover{text-decoration: underline;}
+.contacto_info p{font-size: 1.1em; font-weight: 300;}
+.form_contact{width: 100%; padding-top: 10px; text-align: center;}
+
+/*Destaque*/
+.main_destaque{background-color: #ccc; background-image: url(../img/destaque.jpg); background-size: cover; background-attachment: fixed; color: #fff;}
+.link_facebook{float: left; margin-bottom: 10px; padding: 50px 0 10px 0; background: rgba(255,255,255,0.3); background-position: top 15px center; background-image: url(../img/social_facebook.png); background-repeat: no-repeat;}
+.link_facebook:hover{background: #3B5998; color: #fff; background-position: top 15px center; background-image: url(../img/social_facebook.png); background-repeat: no-repeat;}
+.link_goole{float: left; margin-bottom: 10px; padding: 50px 0 10px 0; background: rgba(255,255,255,0.3); background-position: top 15px center; background-image: url(../img/social_google.png); background-repeat: no-repeat;}
+.link_goole:hover{background: #D73D32; color: #fff; background-position: top 15px center; background-image: url(../img/social_google.png); background-repeat: no-repeat;}
+.link_twitter{float: left; margin-bottom: 10px; padding: 50px 0 10px 0; background: rgba(255,255,255,0.3); background-position: top 15px center; background-image: url(../img/social_twitter.png); background-repeat: no-repeat;}
+.link_twitter:hover{background: #54A4D6; color: #fff; background-position: top 15px center; background-image: url(../img/social_twitter.png); background-repeat: no-repeat;}
+
+/*Rodapé*/
+.main_footer{background: #ff0000; color: #fff;}
+.main_footer p{text-align: center; margin-left: 5px; font-weight: 300; font-size: 1em; padding-top: 10px;}
+
+/*Botão de Rolagem da Page*/
+.backtop{position: fixed; display: none; cursor: pointer; bottom: 15px; right: 25px; text-transform: uppercase; font-size: 0.7em; background-color: rgba(0,0,0,0.3); color: #fff; padding: 10px;}
+
+/*
+480PX BREAKPOINT
+*/
+@media (min-width:30em){
+    .main_logo{background: url(../img/log.png) center center no-repeat; height: 70px; width: 342px;}
+    .main_serv_item{float: left; width: 48%; margin-right: 4%; min-height: 200px;}
+    .main_serv_item:nth-of-type(2n+0){margin-right: 0;}
+}
+
+/*
+592PX BREAKPOINT
+*/
+@media (min-width: 37em){
+    .mobile_action{width: 40px; height: 40px; margin: 16px 0 0 0; float: right; cursor: pointer; background: url(../img/mobile.png) center center no-repeat;}
+    .main_empresa article{min-height: 150px;}
+    .main_serv_item{min-height: 240px; width: 46.5%; margin-right: 7%;}
+    .main_serv_item:nth-of-type(2n+0){margin-right: 0;}
+    .cartao{margin: 2% auto; padding: 1% 2%; background-color: rgba(255,255,255,0.5); width: 100%; max-width: 550px;}
+    .main_agenda{background-color: #ff0000; height: 135px; margin: 3% 16%; padding:10px 10px;}
+    .link_facebook{float: left; width: 30%; margin-right: 5%;}
+    .link_goole{float: left; width: 30%; margin-right: 5%;}
+    .link_twitter{float: left; width: 30%;}
+
+}
+
+/*
+960PX BREAKPOINT
+*/
+@media (min-width: 60em){
+    .main_empresa article{ float: left; width: 30%; margin-right: 5%; background-color: #fbfbfb; -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); -moz-box-shadow:0px 3px 3px 0px rgba(0,0,0,0.3); box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); padding: 20px 30px; min-height: 230px; margin-top: 10px;}
+    .main_empresa article:nth-of-type(3n+0){margin-right: 0;}
+    .main_serv_item{float: left; width: 30%; margin-right: 5%; min-height: 230px;}
+    .main_serv_item:nth-of-type(3n+0){margin-right: 0;}
+    .main_serv_item img{width: 40%; height: 40%;}
+    .main_serv_item h1{font-size: 1.4em; font-weight: 300; margin-bottom: 5px;}
+    .main_serv_item p{font-size: 1em;}
+    .contacto_info{float: left; width: 46.5%; margin-right:7%; text-align: left;}
+    .form_contact{float: right; width: 46.5%; text-align: right;}
+    .link_facebook{float: left; width: 30%; margin-right: 5%;}
+    .link_goole{float: left; width: 30%; margin-right: 5%;}
+    .link_twitter{float: left; width: 30%;}
+}
+
+
+
+
+
+
